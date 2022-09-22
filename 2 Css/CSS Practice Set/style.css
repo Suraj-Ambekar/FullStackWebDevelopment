@@ -1,0 +1,23 @@
+nav{
+    background-color: blue;
+    color: white;
+}
+.bg{
+    width: 320px;
+    height: 200px;
+    background-color: red;
+    background-image: url("Lord\ Ganesh\ \(13\).jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* background-position-x: 50px; */
+}
+.first{
+    color: white;
+    width: 320px;
+    height: 1000px;
+    background-color: black;
+    background-image: url("Lord\ Ganesh\ \(13\).jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+}

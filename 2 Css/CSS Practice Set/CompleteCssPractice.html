@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* CSS UNITS */
+        /* #main{
+            width: 500px;
+            width: 50%;
+            height: 500px;
+            border: 2px solid red;
+        }
+        #using{
+            width: 7em;
+            height: 90VH;
+            border: 2px solid red;
+        } */
+        /* TEXT STYLING */
+        /* #font{
+            font-size: 1rem;
+            font-weight: 900;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-style: italic;
+            color: blue; 
+            text-align: justify;
+            text-transform: capitalize;
+            text-overflow: clip;
+            text-shadow: 2px 2px gray;
+            line-height: 20px;
+            line-break: auto;
+            letter-spacing: 20px;
+            word-spacing: 20px;
+            text-decoration:overline;
+        } */
+        /* CSS BACKGROUND */
+        /* #bg{
+            width: 500px;
+            height: 500px;
+            border: 2px solid blue;
+            background-image: url('/mario.png');
+            background-repeat: no-repeat;
+            background-size: 50% 50%;
+            background-position: top;
+            background-attachment:fixed;
+            background-position-x: 110px;
+            background-position-y: 100px;
+        } */
+        /* CSS MARGIN AND PADDING */
+        /* *{
+            margin: 0px;
+            padding: 0px;
+        }
+        #mandp{
+            width: 300px;
+            height: 300px;
+            border: 2Px solid blue;
+            margin: 10px 20px 30px 50px;
+            padding: 20px 30px 50px 30px;
+        } */
+        /* DISPLAY PROPERTIES */
+        /* .display{
+            border: 3px dashed greenyellow;
+            //display: inline;
+            //display: block;
+            display: inline-block;
+            width: 200px;
+        } */
+        /* POSITION PROPERTIES */
+        /* #container{
+            margin: auto;
+            width: 500px;
+            height: 500vh;
+            border: 2px solid blue;
+        }
+        #position{
+            width: 100px;
+            height: 100px;
+            border: 10px solid rgb(81, 255, 0);
+            position: relative;
+            top: 100px;
+            right: 100px;
+            left: 400px;
+            position: static;
+            top: 100px; //can't change positions when it is static
+            position: absolute;
+            top: 10px; //it will start from the parent and parent is page 
+            position: fixed;
+            top: 200px; //it will stay still on his positionand when u scroll page will get scroll but this won't
+            position: sticky;
+            top: 0px; //will stick to his position and content will get scroll inside his
+        } */
+        /* BOX SIZING */
+        /* #boxsizing{
+            width: 500px;
+            height: 500px;
+            border: 20px solid blue;
+            box-sizing: border-box;
+        } */
+        /* MIN AND MAX WIDTH */
+        /* #mnm{
+            width: 500px;
+            min-width: 200px;
+            max-width: 400px;
+            height: 500px;
+            border: 20px solid blue;
+        } */
+        /* OVERFLOW */
+        /* #of{
+            width: 100px;
+            height: 50px;
+            border: 2px solid red;
+            overflow: hidden;
+            overflow: scroll;
+            overflow: visible;
+        } */
+        /* CSS SHADOW */
+        /* #shadow{
+            width: 500px;
+            margin: 200px;
+            font-size: 4em;
+            font-weight: 900;
+            color: lime;
+            border: 0px solid orangered;
+            border-radius: 5px;
+            text-shadow: 0px -1px red, 1px 0px red, 
+            0px 1px red, -1px 0px red;
+            text-shadow: 0px -1px red, 1px 0px red, 
+            0px 1px red, -1px 0px red;
+            box-shadow: 10px 10px 2px yellow;
+            0px -1px darkblue, 1px 0px darkblue, 
+            0px 1px darkblue, -1px 0px darkblue;
+            box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.212), -5px -5px 7px rgba(241, 255, 241, 0.603),
+                    inset 5px 5px 3px rgba(0, 0, 0, 0.808),
+                    inset 5px 5px 3px rgba(237, 245, 237, 0.219);
+            
+        } */
+        /* FLEX BOX */
+        /* #container{
+            width: 90%;
+            height: 400px;
+            margin: 400px auto;
+            border: 5px solid #ffee07;
+            border-radius: 5px;
+            background-color: limegreen;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            flex-flow: row nowrap;
+            justify-content: space-evenly;
+            align-items: center;
+            align-content: space-between;
+            flex-basis: 300px;
+            
+            
+        }
+        .flex{
+            width: 90px;
+            height: 50px;
+            border: 2px solid #ff9307;
+            border-radius: 5px;
+            background-color: rgb(205, 50, 171);
+            text-align: center;
+            padding-top: 30px;
+            
+        }
+        .flex:hover{
+            color: white;
+
+        }
+        #one{
+            order: 1;
+        }
+        #two{
+            
+        }
+        #three{
+            order: -1;
+        }
+        #four{
+            flex-grow: 8;
+        }
+        #five{
+            flex-grow: 10;
+        }
+        #six{
+            align-self: end;
+        } */
+        /* GRID  */
+        /* #container{
+            width: 90%;
+            height: 600px;
+            margin: 400px auto;
+            border: 5px solid #ffee07;
+            border-radius: 5px;
+            background-color: limegreen;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);  
+            grid-template-areas: 
+            "o o t"
+            "th f f"
+            "fi fi s";
+            grid-template: 
+            "o o t" 1fr
+            "th f f"1fr
+            "fi fi s" 1fr
+            /1fr 1fr 1fr;   
+            grid-column-gap: 10px;  
+            grid-row-gap: 10px;
+            grid-gap: 10px 10px;
+            justify-items: start;
+            align-items: flex-start;
+            place-items: start center ;
+            justify-content: left;
+            align-content: center;
+            grid-auto-flow: column;
+        }
+        .grid{
+            width: 90px;
+            height: 50px;
+            border: 2px solid #ff9307;
+            border-radius: 5px;
+            background-color: rgb(205, 50, 171);
+            text-align: center;
+            padding-top: 30px;
+        }
+        .grid:hover{
+            color: white;
+        }
+        #one{
+            grid-area: o;
+            grid-column: 1 / 3;
+            justify-self: start;
+            align-self: center;
+            place-self: center start;
+            background-color: red;
+        }
+        #two{
+            grid-area: t;
+            grid-column: 1 / 2;
+            grid-row: 2 / 4;
+        }
+        #three{
+            grid-area: th;
+        }
+        #four{
+            grid-area: f;
+        }
+        #five{
+            grid-area: fi;
+        }
+        #six{
+            grid-area: s;   
+        } */
+        /* GRADIENT */
+        /* #gradient{
+            width: 300px;
+            height: 300px;
+            margin: 100px auto;
+            border: 2px solid orangered;
+            border-radius: 50%;
+            background-image: repeating-linear-gradient( red 90% , blue  );
+            background-image: repeating-radial-gradient(closest-corner at 100px 200px ,red 90% , yellow);        
+        } */
+        /* TRANSFORM */
+        /* #transform{
+            width: 300px;
+            height: 300px;
+            margin: 100px auto;
+            border: 2px solid orangered;
+            background-color: yellow;
+            transform: rotate(0.72turn);
+            transform: scale(3);
+            transform: scaleX(2);
+            transform: skew(10deg , 20deg);    
+        }
+        #transform:hover{
+            transform: translate(200px , 30px);
+        } */
+        /* TRANSITION */
+        /* #transition{
+            width: 300px;
+            height: 300px;
+            margin: 100px auto;
+            border: 2px solid orangered;
+            background-color: yellow;
+            transition-property: all;
+            transition-duration: 2s;
+            transition-timing-function:ease-in-out ; 
+            transition-delay: 5ms ;            
+        }
+        #transition:hover{
+            cursor: pointer;
+            width: 20px;
+            height: 10px;
+            transform: rotate(360deg);
+        } */
+        /* ANIMATION */
+        /* #animation{
+            width: 300px;
+            height: 300px;
+            margin: 100px auto;
+            border: 2px solid orangered;
+            background-color: yellow;
+            animation-name: suraj ;      
+            animation-duration: 5s ;
+            animation-timing-function: ease-out ;
+            animation-delay: 2s ;    
+            animation-iteration-count: 3 ;
+            animation-direction: normal ;
+            animation-fill-mode: forwards ;
+            animation-play-state: running ;
+        }
+        @keyframes suraj {
+            from{ background-color: rgb(10, 255, 10);}
+            to{ background-color: rgb(223, 35, 176);
+            transform: translate(200px, 100px);}
+        } */
+        /* MEDIA QUARIES */
+        /* #media{
+            width: 300px;
+            height: 300px;
+            margin: 100px auto;
+            border: 2px solid orangered;
+            background-color: yellow;
+        }
+        @media screen and (min-width: 200px) {
+            #media{
+                background-color: orangered;
+            }
+        }
+        @media screen and (min-width:300px) {
+            #media{
+                background-color: limegreen;
+            }
+        } */
+        /* BACKGROUND CLIP */
+        /* #bgc{
+            width: 300px;
+            height: 300px;
+            margin: 100px auto;
+            font-size: 4em;
+            font-weight: 900;
+            background-image: url('/coin.png');
+            background-size: cover;  
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+        #bgc{
+            width: 300px;
+            height: 300px;
+            margin: 100px auto;
+            font-size: 4em;
+            font-weight: 900;
+            background-image: linear-gradient(red, yellow);
+            background-size: cover;
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        } */
+        /* CSS VARIABLES */
+        /* :root{
+            --suraj: green;
+        }
+        #variables{
+            width: 300px;
+            height: 300px;
+            margin: 100px auto;
+            border: 2px solid orangered;
+            background-color: var(--suraj);
+        } */
+       /* CSS LINK RELATED PSEUDO CLASSES */
+       /* a:link{
+           width: 100px;
+           color: red; // it will change link default color blue to red
+       }
+       a:active{
+           color: red;
+           background-color: #ff2bff; // after clicking on the link it will change the color
+       }
+       a:visited{
+           color: red;
+           background-color: yellow; // if link is already visited then it will change the color
+       }
+       a:target{
+           color: pink;
+       } */
+       /* CSS BEFORE AND AFTER PSUEDO ELEMENTS */
+       /* p{
+           display: inline;
+           background-color: red;
+       }
+       p::before{
+           content: 'Ambekar ';
+           font-size: 3rem;
+       }
+       p::after{
+           content: 'Ambekar ';
+           font-size: 3rem;
+       }
+
+       li{
+           list-style: none;
+       }
+       li::before{
+           content: ' ';
+           display: inline-block;
+           width: 10px;
+           height: 10px;
+           background-image: url(/box.jpg) ;
+           background-size: contain;
+       } */
+       /* PROGRESS BAR */
+    </style>
+</head>
+<body>
+    <!-- CSS UNITS AND TEXT STYLING -->
+    <!-- <div id="main">
+        <div id="using"></div>
+    </div>
+    <h1>suraj</h1>
+    <div id="font">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit id molestias repellendus ipsam vitae fugiat natus nihil voluptate incidunt beatae, quo explicabo blanditiis mollitia dicta magnam totam animi quod iusto.</div>  -->
+    <!-- CSS BACKGROUND -->
+    <!-- <div id="bg"> 
+    </div> -->
+    <!-- CSS MARGIN AND PADDING -->
+    <!-- <div id="mandp">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae ducimus quaerat odio ut dolores minus, accusamus dolorem nisi doloribus ipsa quam eos debitis quas magni deleniti cum voluptatibus repellat quidem?
+    </div> -->
+    <!-- DISPLAY PROPERTIES -->
+    <!-- <div>
+        <h1 class="display">suraj</h1>
+        <h1 class="display">bhagwan</h1>
+        <h1 class="display">ambekar</h1>
+    </div> -->
+    <!-- POSITION PROPERTIES -->
+    <!-- <div id="container">
+        <div id="position"></div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit repudiandae id voluptatem aut corrupti dicta reiciendis molestias dolores totam, at laboriosam fugit, atque accusamus quod quae, quisquam modi molestiae voluptatibus?
+    </div> -->
+    <!-- BOX SIZING -->
+    <!-- <div id="boxsizing">
+
+    </div> -->
+    <!-- MIN AND MAX WIDTH -->
+    <!-- <div id="mnm">
+
+    </div> -->
+    <!-- OVERFLOW -->
+    <!-- <div id="of">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis recusandae tempore error officiis magni voluptatem quas rerum, a facilis ipsum? Reiciendis incidunt tenetur eveniet, quae ratione reprehenderit ducimus similique ex.
+    </div> -->
+    <!-- CSS SHADOW -->
+    <!-- <div id="shadow">
+        suraj ambekar
+    </div> -->
+    <!-- FLEX BOX -->
+    <!-- <div id="container">
+        <div id="one" class="flex">1</div>
+        <div id="two" class="flex">2</div>
+        <div id="three" class="flex">3</div>
+        <div id="four" class="flex">4</div>
+        <div id="five" class="flex">5</div>
+        <div id="six" class="flex">6</div>
+    </div> -->
+    <!-- GRID -->
+    <!-- <div id="container">
+        <div id="one" class="grid">1</div>
+        <div id="two" class="grid">2</div>
+        <div id="three" class="grid">3</div>
+        <div id="four" class="grid">4</div>
+        <div id="five" class="grid">5</div>
+        <div id="six" class="grid">6</div>
+    </div> -->
+    <!-- GRADIENT -->
+    <!-- <div id="gradient">
+
+    </div> -->
+    <!-- TRANSFORM -->
+    <!-- <div id="transform">
+
+    </div> -->
+    <!-- TRANSITION -->
+    <!-- <div id="transition">
+
+    </div> -->
+    <!-- ANIMATION -->
+    <!-- <div id="animation">
+
+    </div> -->
+    <!-- MEDIA QUARIES -->
+    <!-- <div id="media">
+
+    </div> -->
+    <!-- BACKGROUND CLIP -->
+    <!-- <div id="bgc">
+        suraj ambekar
+    </div> -->
+    <!-- CSS VARIABLES -->
+    <!-- <div id="variables">
+
+    </div> -->
+    <!-- CSS LINK RELATED PSEUDO CLASSES -->
+    <!-- <a href="google.com">
+        google.com
+    </a> -->
+    <!-- CSS BEFORE AND AFTER PSUEDO ELEMENTS -->
+    <!-- <p>
+        suraj
+        <ul>
+            <li>suraj</li>
+            <li>suraj</li>
+            <li>suraj</li>
+            <li>suraj</li>
+        </ul>
+    </p> -->
+    <!-- <progress></progress> -->
+</body>
+</html>

@@ -1,0 +1,27 @@
+.parent{
+    background-color: #23424A;
+    width: 80%;
+    margin: 0 auto;
+    /* margin: 1rem 6rem; */
+    padding: 3rem 3rem;
+}
+.child{
+    width: 60%;
+}
+
+h1{
+    color: white;
+    font-family:'Poppins',  Times, serif;
+    /* font-size: 48px; */
+}
+
+p{
+    color: rgb(236, 234, 234);
+}
+
+button{
+    background-color: #38CFD9;
+    font-weight: 900;
+    border-radius: 20px;
+    padding: 0.5rem 2rem;
+}

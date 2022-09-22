@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+            border: 1px solid grey;
+            margin: 200px auto;
+            /* transition: all 0.3s ease-out; */
+            transition-property: all;
+            transition-duration: 1s;
+            /* transition-timing-function:ease ; */
+            /* transition-timing-function:ease-in ; */
+            /* transition-timing-function:ease-out ; */
+            /* transition-timing-function:ease-in-out ; */
+            transition-delay: 2ms;
+            /* transition: all 1s linear 2ms;  */
+        }
+        div:hover{
+            cursor: pointer;
+            width: 400px;
+            border-radius: 50%;
+            background-color: limegreen;
+            transform: rotate(180deg);
+            opacity: 0.9;
+            
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

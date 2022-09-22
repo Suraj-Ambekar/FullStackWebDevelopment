@@ -1,0 +1,21 @@
+header{
+    height: 20px;
+    background-color: green;
+}
+article{
+    height: 90vh;
+    background-color: rgb(128, 51, 0);
+    color: white;
+    box-sizing: border-box;
+}
+footer{
+    /* height: 200px; */
+    background-color: rgb(126, 67, 180);
+    color: white;
+    text-align: center;
+}
+
+.border_margin{
+    border: 1px solid red;
+    margin: 1px;
+}

@@ -1,0 +1,291 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* navbar start */
+.navbar{
+    height: 9vh;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10em;
+}
+/* select{
+    display: inline;
+} */
+#navmenu{
+    width: 35%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+#navmenu select, .color{
+    border: none;
+    background-color: black;
+    color: white;
+    font-weight: 300;
+    font-size: 1em;
+}
+#navmenu button{
+    font-weight: 300;
+    font-size: 0.7em;
+    padding: 0.5em;
+}
+
+/* First part start */
+
+.first{
+    height: 70vh;
+    width: 100vw;
+    background-image: url("macbook_mouse.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.first h1{
+    color: white;
+    font-family: 'Poppins', Courier, monospace;
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.first #row{
+    /* background-color: red; */
+    display: flex;
+    flex-direction: row;
+}
+.first #row #new{
+    background-color: white;
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+.first #row #new p{
+    line-height: 1.4em;
+}
+
+.first #row #new .checkout{
+    margin-right: 1em;
+}
+.first #row #active{
+    background-color: black;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+
+
+
+/* Second part start */
+
+.second{
+    /* box-sizing: border-box; */
+    height: 50vh;
+    /* padding: 5em; */
+    width: 100vw;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: row;
+}
+
+.second #d{
+    height: 100%;
+    width: 50%;
+    /* background-color: black; */
+    background-image: url("santorini.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.second #history{
+    height: 100%;
+    width: 50%;
+    padding: 4em;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.second #history #hi{
+    color: white;
+    font-weight: 300;
+    font-size: 3em;
+}
+.second #history span{
+    color: yellow;
+}
+
+.c p{
+    color: rgb(229, 213, 213);
+}
+
+.second #history #column{
+    display: flex;
+    flex-direction: row;
+}
+
+.second #history button{
+    background-color: gray;
+    color: white;
+    padding: 7px 15px;
+    align-self: flex-start;
+}
+
+
+/* Third part start */
+
+.third{
+    box-sizing: border-box;
+    height: 70vh;
+    width: 100vw;
+    padding: 2em;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+.third .part{
+    height: 50vh;
+    width: 40vw;
+    margin: 3em;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 2em;
+    row-gap: 2em;
+    grid-template-areas: 
+    "o o t f"
+    "o o s e";
+}
+.third .part .pbox{
+    border: 2px solid red;
+    background-size: cover;
+}
+
+#po{
+    grid-area: o;
+    
+}
+#pt{
+    grid-area: t;
+    background-image: url("photo.jpg");
+}
+#pf{
+    grid-area: f;
+    background-image: url("mario.png");
+}
+#ps{
+    grid-area: s;
+    background-image: url("coin.png");
+}
+#pe{
+    grid-area: e;
+    background-image: url("santorini.jpg");
+}
+
+#pbo{
+    height: 55%;
+    width: 100%;
+    background-image: url("santorini.jpg");
+    background-size: cover;
+    
+}
+#pbt{
+    height: 45%;
+    width: 100%;
+    padding: 0.5em;
+    background-color: white;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-row-gap: 0.5em;
+    /* justify-content: start; */
+}
+
+.third .part .pbox #pbt button{
+    justify-self: start;
+    background-color: black;
+    color: white;
+    padding: 0.2em;
+}
+
+
+
+
+
+
+
+
+
+/* fourth part start */
+.fourth{
+    /* box-sizing: border-box; */
+    height: 45vh;
+    width: 100vw;
+    /* background-color: red; */
+    background-image: url("Lord\ Ganesh\ \(13\).jpg");
+    display: flex;
+    flex-direction: column;
+}
+.fourth h1{
+    margin: 40px 0px 20px 0px;
+    text-align: center;
+    color: white;
+}
+.fourth #mplan {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.fourth #mplan .pone{
+    height: 25vh;
+    width: 10vw;
+    background-color: black;
+    margin: 10px 30px;
+    /* display: flex;
+    flex-direction: column; */
+
+}
+
+.fourth #mplan .pone .fweight{
+    font-size: 0.9em;
+    font-weight: 700;
+}
+.fourth #mplan .pone .opac{
+    margin-top: 0.7em;
+    font-size: 0.7em;
+    opacity: 0.5;
+}
+
+.fourth #mplan .pone .io{
+    height: 42%;
+    width: 100%;
+    background-color: rgb(200, 152, 64);
+    color: white;
+    padding: 15px 20px;
+}
+.fourth #mplan .pone .it{
+    height: 58%;
+    width: 100%;
+    background-color: white;
+    padding: 10px 20px;
+}

@@ -1,0 +1,133 @@
+.container{
+    margin: 400px auto;
+    width: 600px;
+    height: 450px;
+    border: 5px solid blue;
+    display: grid;
+    /* grid-template-columns: [col-star] 100px [col-2] 100px [col-3] 100px [col-end]; */
+    /* grid-template-columns: repeat(3,100px);
+    grid-template-rows: 100px auto 30px; */
+    /* grid-auto-rows: 50px;
+    grid-auto-columns: 100px; */
+    /* grid-auto-flow: row; */
+    /* grid-row-gap: 20px;
+    grid-column-gap: 20px; */
+    /* grid-gap: 50px; */
+    /* align-items: center; */
+    /* justify-items: center; */
+    /* place-items: center; */
+    /* align-content: center;
+    justify-content: center; */
+    /* place-content: center start; */
+    /* grid-template-areas: 
+    "one one two"
+    "three four five"
+    "six six six"; */
+    /* grid-template: 
+    "one one two" 100px
+    "three four five" auto
+    "six six six" 40px
+    /1fr 1fr 1fr; */
+    /* grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr); */
+    /* grid-template-areas: 
+    "one one two"
+    "three four four"
+    "five five six"; */
+    /* grid-column-gap: 20px;
+    grid-row-gap: 20px; */
+    /* grid-gap: 20px 20px; */
+    /* justify-items: center;
+    align-items: center;
+    place-items: center; */
+    /* place-content: center; */
+    
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    /* grid-template-areas: 
+    "o tw tw t"
+    "f f f fi"
+    "s s s s"; */
+    /* grid-template: 
+    "o tw tw t" 1fr
+    "f f f fi" 1fr
+    "s s s s" 1fr
+    /1fr 1fr 1fr 1fr; */
+    /* grid-column-gap: 10px; */
+    /* grid-row-gap: 10px; */
+    /* grid-gap: 10px 50px;     */
+    /* justify-items: start;
+    align-items: end;
+    place-items: center; */
+    /* justify-content: center;
+    align-content: center;
+    place-content: center; */
+
+}
+.one{
+    /* grid-area: o; */
+    /* grid-column: 1 / 5; */
+    /* grid-row: 1 / 4; */
+    /* justify-self: center; */
+}
+.two{
+    /* grid-area: tw; */
+}
+.three{
+    /* grid-area: t; */
+}
+.four{
+    /* grid-area: f; */
+}
+.five{
+    /* grid-area: fi; */
+}
+.six{
+    /* grid-area: s; */
+}
+
+/* .one{
+    grid-area: one;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    align-self: center;
+    justify-self: center;
+    place-self: center;
+    grid-area: 1/ 1/ 3/3;
+}
+.two{
+    grid-area: two;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-area: 2/ 1/ 3/3;
+}
+.three{
+    grid-area: three;
+    
+}
+.four{
+    grid-area: four;
+}
+.five{
+    grid-area: five;
+}
+.six{
+    grid-area: six;
+} */
+
+
+
+
+.item{
+    background-color: rgb(219, 185, 31);
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: 900;
+}
+.item:hover{
+    color: white;
+    
+}

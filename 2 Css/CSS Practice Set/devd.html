@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        /* .marginpadding{
+            width: 500px;
+            display: inline-block;
+            border: 3px solid red;
+            margin: 200px ;  
+            padding: 20%;    
+
+        } */
+        /* .borders{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            margin: 200px;
+            border: 5px solid rebeccapurple;
+            border-top: 10px;
+            border-right: 20px;
+            border-left: 15px;
+            border-bottom: 10px;
+            border-left-color: blue;
+            border-right-color: aqua;
+            border-top-color: lightgreen;
+            border-bottom-color: brown;
+            border-style:ridge;
+            border-image: url("Lord\ Ganesh\ \(13\).jpg");
+            border-image-width: 50px 100px;
+            
+            border-radius: 50%;
+            
+        } */
+        
+        /* .textformating{
+            width: 500px;
+            height: 500px;
+            display: inline-block;
+            margin: 200px;
+            padding: 100px;
+            border: 5px solid red;
+            
+        }
+
+        .textformating a{
+            text-decoration: none;
+            text-decoration: 5px line-through green ;
+            text-decoration-color: red; 
+            text-decoration-line: overline;
+            text-decoration-line: none;
+            text-transform: capitalize;
+            text-shadow: 20px 20px gainsboro;
+            text-align:left;
+            text-align: justify;
+        }
+        p{
+            text-align:start;
+        } */
+
+        /* .fonts p{
+            font-size: 30px;
+            font-weight: 700;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-style:italic;
+            font-variant: small-caps;
+
+        } */
+
+        /* .boxsizing{
+            width: 200px;
+            height: 200px;
+            margin: 200px;
+            border: 5px solid green;
+            box-sizing: border-box;
+            
+        }
+        .child{
+            width: 50px;
+            height: 50px;
+            border: 2px solid aqua;
+            margin: 20px 20px;
+            
+
+        } */
+
+        /* .colors{
+            width: 200px;
+            height: 200px;
+            margin: 200px;
+            border: 5px solid black;
+            background-color: rgba(57, 134, 57, 0.7);
+            background-color: green;
+            background-color:  rgb(243, 81, 100);
+        } */
+
+        /* .positions{
+            width: 200px;
+            height: 200px;
+            margin: 200px;
+            border: 5px solid black;
+        } */
+
+        /* .player{
+            width: 20px;
+            height: 20px;
+            background-color: aqua;
+            border: 2px solid rgb(156, 32, 32);
+            position:absolute;
+            top: 210px;
+            
+        } */
+
+        /* .player{
+            width: 20px;
+            height: 20px;
+            background-color: aqua;
+            border: 2px solid rgb(156, 32, 32);
+            position:fixed;         
+        } */
+
+        /* .player{
+            width: 20px;
+            height: 20px;
+            background-color: aqua;
+            border: 2px solid rgb(156, 32, 32);
+            position: static; //we can't use lrbt(left) for static
+            left: 100px;         
+        } */
+
+        /* .player{
+            width: 20px;
+            height: 20px;
+            background-color: aqua;
+            border: 2px solid rgb(156, 32, 32);
+            position: relative;
+            left: 10px; 
+            top: 20px;       
+        } */
+
+        /* .player{
+            width: 20px;
+            height: 20px;
+            background-color: aqua;
+            border: 2px solid rgb(156, 32, 32);
+            position: sticky;
+            top: 100px;     
+        } */
+
+
+        /* .demo{
+            width: 20px;
+            height: 20px;
+            background-color: rgb(252, 101, 0);
+            border: 2px solid rgb(156, 32, 32);
+            
+        }
+
+        .demo2{
+            height: 1000px;
+            width: 200px;
+            background-color: purple;
+        } */
+
+        /* .bg{
+            width: 500px;
+            height: 500px;
+            margin: 200px;
+            border: 2px solid rgb(156, 32, 32);
+            background-color: aqua;
+            background-image: url('Lord\ Ganesh\ \(13\).jpg');
+            background-size: 200px;
+            background-repeat: no-repeat;
+            background-position: 10px 10px;
+
+                
+        } */
+
+        /* .text-shadows{
+            margin: 200px auto;
+            text-align: center;
+            text-shadow: 0px -1px red, 1px 0px red,
+                        0px 1px red, -1px 0px red;
+
+        }   */
+
+        /* .box-shadows{
+            margin: 200px auto;
+            width: 100px;
+            height: 100px;
+            border: 2px solid green;
+            text-align: center;
+            box-shadow: 0px -1px red, 1px 0px red,
+                        0px 1px red, -1px 0px red;
+        } */
+
+        /* .bt-shadows{
+            margin: 200px auto;
+            display: block;
+            font-size: 20px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+        .bt-shadows:hover{
+            box-shadow: 0px -1px red, 1px 0px red,
+                        0px 1px red, -1px 0px red;
+        } */
+
+        /* .flex-container{
+            width: 400px;
+            height: 200px;
+            background-color: blue;
+            margin: 200px auto;
+            border-radius: 3px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+            align-items: center; 
+            
+        }
+        .first{
+            width: 50px;
+            height: 20px;
+            background-color: rgb(0, 202, 0);
+            border-radius: 3px;
+            box-shadow: 0px 1px 3px black;
+            text-align: center;
+            font-weight: 800;
+            
+            
+        }
+        .second{
+            width: 50px;
+            height: 20px;
+            background-color: rgb(0, 202, 0);
+            border-radius: 3px;
+            box-shadow: 0px 1px 3px black;
+            text-align: center;
+            font-weight: 800;
+            //order:0;
+            //flex-grow: 3;
+            //flex-shrink: 10;
+            //flex-basis: 200px;
+            //flex: 0 0 200px ;
+            //align-self: flex-end ;
+
+        }
+        .third{
+            width: 50px;
+            height: 20px;
+            background-color: rgb(0, 202, 0);
+            border-radius: 3px;
+            box-shadow: 0px 1px 3px black;
+            text-align: center;
+            font-weight: 800;
+            order:1;
+            
+            
+        }
+        .fourth{
+            width: 50px;
+            height: 20px;
+            background-color: rgb(0, 202, 0);
+            border-radius: 3px;
+            box-shadow: 0px 1px 3px black;
+            text-align: center;
+            font-weight: 800;
+            order:1;
+            
+        }
+        .flex-container div:hover{
+            color: white;
+        } */
+
+    </style>
+</head>
+<body>
+    <!-- <div class="marginpadding">
+        <h1>suraj bhagwan ambekar</h1>
+    </div> -->
+
+    <!-- <div class="borders">
+
+    </div> -->
+
+    <!-- <div class="textformating">
+        <a href="#">suraj the don</a>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At quidem maiores quo excepturi adipisci laborum voluptate voluptatum. Sunt, voluptatum? Voluptates eos amet quod voluptatem tenetur blanditiis vel reiciendis consectetur itaque?</p>
+        
+    </div> -->
+
+    <!-- <div class="fonts">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, laboriosam.</p>
+    </div> -->
+
+    <!-- <div class="boxsizing">
+        <div class="child"></div>
+    </div> -->
+
+    <!-- <div class="colors">
+
+    </div> -->
+
+    <!-- <div class="positions">
+        <div class="player"></div>
+        <div class="demo"></div>
+    </div>
+    <div class="demo2">
+        I used demo2 for fixed position to show how it is working 
+    </div> -->
+
+    <!-- <div class="bg">
+    </div> -->
+
+    <!-- <h1 class="text-shadows">Suraj Bhagwan Ambekar</h1> -->
+
+    <!-- <div class="box-shadows"></div> -->
+
+    <!-- <button class="bt-shadows">sign up</button> -->
+    
+
+    <!-- <div class="flex-container">
+        <div class="first">1</div>
+        <div class="second">2</div>
+        <div class="third">3</div>
+        <div class="fourth">4</div>
+        
+    </div> -->
+
+</body>
+</html>

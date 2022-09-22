@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Fredoka:wght@500&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        header{
+            padding: 0px 20px;
+            background-color: aqua;
+            width: 100%;
+            height: 80px;
+            box-shadow: 0px 3px 1px grey;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            align-items:center;
+            /* align-content: space-between; */
+        }
+        #logo{
+            /* outline: 1px solid grey; */
+            flex-basis: 30%;
+        }
+        #logo img{
+            width: 100px;
+        }
+        nav{
+            padding-left: 10px;
+            /* outline: 1px solid grey; */
+            flex-basis: 50%;
+            display: flex;
+            
+        }
+        nav a{
+            text-decoration: none;
+            text-transform: capitalize;
+            font-family: 'Baloo Bhai 2', cursive;
+            font-family: 'Fredoka', sans-serif;
+            /* flex-basis: 1; */
+            flex-grow: 2;
+            
+        }
+        /* @media screen and (min-width: 300px) {
+            header{
+                background-color: lime;
+            }
+        }
+        @media screen and (min-width: 350px) {
+            header{
+                background-color: orangered;
+            }
+        }
+        @media screen and (min-width: 400px) {
+            header{
+                background-color: rebeccapurple;
+            }
+        }
+        @media print {
+            header{
+                background-color: lime;
+            }
+        } */
+    </style>
+</head>
+<body>
+    <header>
+        <div id="logo"><img src="logo_switchtocode.png" alt=""></div>
+        <nav>
+
+            <a href=""><b>home</b></a>
+            <a href="">blog</a>
+            <a href="">about</a>
+            <a href="">contact</a>
+        </nav>
+    </header>
+</body>
+</html>

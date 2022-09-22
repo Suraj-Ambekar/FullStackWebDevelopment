@@ -1,0 +1,199 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+/* First Section Start */
+#first{
+    /* box-sizing: border-box; */
+    margin: 0px;
+    padding: 0px;
+    width: 100vw;
+    height: 70vh;
+    background-image: url("santorini.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#first h1{
+    margin: 0px;
+}
+#first h3{
+    color: white;
+    font-weight: 200;
+    opacity: 0.9;
+}
+#first #dbutton{
+    transform: translate(60%, 30%);
+    font-size: 0.5em;
+    border: 2px solid white;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 5px 20px 5px 20px;
+    /* padding-left: 20px;
+    padding-right: 20px; */
+    color: white;
+}
+/* First Section End */
+
+/* Second Section Start */
+#second{
+    width: 100vw;
+    height: 80vh;
+    background-color: white;
+}
+/* #second #main{
+    border: 2px solid green;
+} */
+#second #main p{
+    color: gray;
+}
+#second #d1{
+    padding: 25px 100px 5px 30px;
+    
+}
+#d1 h2{
+    margin: 0px;
+}
+#second #main #d2{
+    padding: 5px 30px 5px 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+#second #main #d2 .center{
+    color: gray;
+    /* padding-left: 20px;
+    padding-right: 25px; */
+    box-sizing: border-box;
+    padding: 0px 25px 15px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+#second #main #d2 #b1{
+    height: 20vh;
+}
+#second #main #d2 #b2{
+    height: 20vh;
+    background-image: url("beach.jfif");
+    background-size: cover;
+}
+#second #main #d2 #b3{
+    height: 20vh;
+}
+#second #main #d2 #b4{
+    height: 20vh;
+    background-image: url("hill.jfif");
+    background-size: cover;
+}
+#second #main #d2 #b5{
+    height: 20vh;
+}
+#second #main #d2 #b6{
+    height: 20vh;
+    background-image: url("trek.jfif");
+    background-size: cover;
+}
+#second #main #d3{
+    padding: 20px 40px 20px 40px;
+}
+/* Second Section End */
+
+/* Third Section Start */
+#third{
+    box-sizing: border-box;
+    width: 100vw;
+    height: 30vh;
+    background-color: rgb(231, 226, 226);
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    /* padding-left: 50%; */
+    /* align-items: center; */
+}
+
+#third p{
+    margin: 0px;
+    transform: translatex(30%);
+    font-size: xx-large;
+    font-weight: 900;
+    color: white;
+}
+#third #searchbox{
+    /* border-radius: 100%; */
+    /* box-sizing: border-box; */
+    height: 5vh;
+    /* border: 2px solid green; */
+    display: flex;
+    flex-direction: row;  
+}
+#third #searchbox input{
+    /* margin-top: 2%; */
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    box-sizing: border-box;
+    height: 100%;
+    width: 40%;
+    border: none;
+    transform: translatex(60%);
+}
+#third #searchbox #child{
+    background-color: rgb(97, 174, 205);
+    height: 100%;
+    width: 10%;
+    box-sizing: border-box;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transform: translatex(240%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+}
+/* Third Section End */
+
+/* Fourth Section Start */
+#fourth{
+    width: 100vw;
+    height: 30vh;
+    background-color: #fdfdfd;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 10px;
+    justify-items: center;
+    align-items: center;
+    /* padding: 0px 95px 15px 20px; */
+    
+
+}
+#f1{
+    /* border: 2px solid rgb(12, 248, 146) ; */
+    background-color: rgb(12, 248, 146);
+    padding: 0px 25px 15px 20px;
+}
+#f2{
+    /* border: 2px solid white ; */
+    background-color: rgb(47, 125, 220);
+    padding: 0px 25px 15px 20px;
+}
+#f3{
+    /* border: 2px solid white ; */
+    background-color: rgb(240, 100, 123);
+    padding: 0px 25px 15px 20px;
+}
+.center{
+    /* color: gray; */
+    /* padding-left: 20px;
+    padding-right: 25px; */
+    /* box-sizing: border-box; */
+    /* padding: 0px 25px 15px 20px; */
+    /* display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center; */
+}
+/* Fourth Section End */

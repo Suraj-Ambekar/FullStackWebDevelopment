@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #circle{
+            width: 300px;
+            height: 300px;
+            margin: 0px auto;
+            margin-top: 200px;
+            border: 2px solid limegreen;
+            border-radius: 50%;
+            animation: circle 2s infinite forwards;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #square{
+            width: 100px;
+            height: 100px;
+            border: 2px solid yellow;
+            animation: square 2s linear 2s infinite alternate forwards running;
+        }
+        @keyframes circle {
+            0%{
+                border: 10px solid red;
+            }
+            25%{
+                border: 15px solid rgb(255, 251, 0);
+            }
+            50%{
+                border: 20px solid rgb(255, 136, 0);
+            }
+            75%{
+                border: 25px solid rgb(255, 0, 191);
+            }
+            100%{
+                border: 5px solid rgb(0, 255, 234);
+                
+            }
+        }
+        @keyframes square {
+            0%{
+                border: 5px solid limegreen;
+                transform: rotate(0deg);
+            }
+            25%{
+                border: 10px solid olive;
+            }
+            50%{
+                border: 15px solid grey;
+            }
+            75%{
+                border: 25px solid brown;
+            }
+            100%{
+                border: 50px solid khaki;
+                transform: rotate(180deg);
+                
+            } 
+        }
+
+    </style>
+</head>
+<body>
+    <div id="circle">
+        <div id="square"></div>
+    </div>
+</body>
+</html>

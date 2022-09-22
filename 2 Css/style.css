@@ -1,0 +1,125 @@
+/* p{
+    font-size: xx-large;
+    text-transform: capitalize;
+} */
+
+#blog-desc{
+    color: #314831;
+}
+
+#blog-desc:hover{
+    color: aqua;
+}
+
+p:hover{
+    color:blue;
+}
+
+#subscription-model input{
+    display: block;
+    background-color: #f7f7f7 ;
+}
+
+.borders{
+    border-top: 10px solid black;
+}
+#first button{
+    color: white;
+    background-color: black;
+}
+main{
+    width: 50%;
+    display: inline-block; 
+    margin-left: 30px;
+}
+#first{
+    display: inline-block;
+    width: 21%;
+    margin-left: 10%;
+    /* vertical-align: top ; */
+}
+/* #search{
+    display: inline-block;
+    width: 21%;
+    margin-left: 10%;
+    vertical-align: top ;
+} */
+.side{
+    vertical-align: top;
+}
+#second div{
+    background-color: rebeccapurple;
+    
+}
+#second{
+    display: inline-block;
+    vertical-align: top;
+    /* margin-right: 90%; */
+
+}
+
+/* #search #slogo {
+   
+    background-size: contain; */
+    /* background-repeat: no-repeat; */
+    /* background-position-x: center; */
+    /* width: 20px;
+    height: 20px; */
+    /* cursor: pointer; */
+    /* font-size: 2rem;
+} */
+/* img{
+    size: 10px;
+} */
+
+
+/* #search div{
+    display: inline;
+    
+}
+#search div #inp{
+    border-color: black;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+#search-bar #slogo{
+    margin-left: -4px;
+    
+    cursor: pointer;
+    background-image: url("image/slogo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-color: white;
+    border-color: black;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+#search-bar input{
+    display: inline;
+} */
+#searchbar{
+    border: ;
+}
+#searchbar input{
+    border-color: black;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    /* font-size: 11px; */
+    /* padding: 3px; */
+}
+button{
+    align-content: center;
+    margin-left: -4px;
+    /* border-left: none; */
+    border-color: black;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    
+}
+img{
+    height: 10px;
+    width: 10px;
+    transform: translate(10%, 20%);
+    
+}

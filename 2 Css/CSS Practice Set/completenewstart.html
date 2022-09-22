@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Text Styling */
+        /* #style{
+           font-size: 2rem; 
+           font-weight: 900;
+           font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+           color: darkorange;
+           text-align: justify;
+           text-transform:uppercase;
+           text-shadow: 2px 2px rebeccapurple;
+           line-height: 20px;
+           letter-spacing: 2px;
+           word-spacing: 10px;
+           text-decoration: overline;
+        } */
+        /* Units */
+        /* #units{
+            background-color: red;
+            height: 100px;
+            width: 50px;
+        } */
+        /* CSS Background */
+        /* #bg{
+            margin: 200px auto;
+            height: 200px;
+            width: 200px;
+            background-color: green;
+            background-image: url("Lord\ Ganesh\ \(13\).jpg");
+            background-size: 200px 200px;
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+        } */
+        /* CSS MARGIN AND PADDING */
+        /* #mp{
+            margin: 200px auto;
+            border: 2px solid red;
+            width: 200px;
+            height: 200px;
+            text-align:center;
+            padding: 200px;
+        } */
+        /* DISPLAY PROPERTIES */
+        /* #dis{
+            border: 2px solid red;
+        }
+        h1{
+            display: inline-block;
+        }
+        h2{
+            display: inline-block;
+        } */
+        /* Position properties */
+        /* #container{
+            margin: 200px auto;
+            border: 2px solid blue;
+            height: 700px;
+            width: 700px;
+        }
+        p{
+            position: relative;
+            top: 50px;
+            left: 20px;
+            position: fixed;
+            bottom: 20px;
+            position: absolute;
+            left: 20px;
+            position: static;
+            top: 200px;
+            position: sticky;
+            top: 40px;
+        } */
+        /* Box Model */
+        /* div{
+            border: 5px solid red;
+            height: 200px;
+            width: 200px;
+            margin: 200px auto;
+        } */
+        /* min max */
+        /* div{
+            border: 2px solid red;
+            height: 600px;
+            width: 60%;
+            min-width: 500px;
+        } */
+        /* overflow */
+        /* #of{
+            width: 100px;
+            height: 50px;
+            border: 2px solid red;
+            overflow: hidden;
+            overflow: scroll;
+            overflow: visible;
+        } */
+        /* text and box shadows */
+        /* #shadow{
+            width: 500px;
+            margin: 200px;
+            font-size: 4em;
+            font-weight: 900;
+            color: lime;
+            border: 0px solid orangered;
+            border-radius: 5px;
+            text-shadow: 0px -2px red, 2px 0px green,
+            -2px 0px yellow, 0px 2px khaki ;
+            text-shadow: 0px -1px red, 1px 0px red, 
+            0px 1px red, -1px 0px red;
+            text-shadow: 0px -1px red, 1px 0px red, 
+            0px 1px red, -1px 0px red;
+            box-shadow: 2px 2px red, 
+            inset 2px 2px 3px red;
+            box-shadow: 10px 10px 2px yellow;
+            0px -1px darkblue, 1px 0px darkblue, 
+            0px 1px darkblue, -1px 0px darkblue;
+            box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.212), -5px -5px 7px rgba(241, 255, 241, 0.603),
+                    inset 5px 5px 5px rgba(0, 0, 0, 0.808),
+                    inset 5px 5px 3px rgba(237, 245, 237, 0.219);
+            
+        } */
+        /* Flex Box */
+        /* #flex{
+           width: 600px;
+           height: 300px;
+           border: 2px solid purple;
+           background-color: aqua;
+           margin: 200px auto;
+           display: flex;
+           flex-direction: row;
+           flex-wrap: wrap;
+           justify-content: center;
+           align-items: center;
+           align-content: center;
+           
+       }
+       .all{
+           width: 90px;
+           height: 50px;
+           border: 1px solid black;
+           border-radius: 10px;
+           background-color: rgb(40, 209, 40);
+       }
+       #first{
+           order: 5;
+           flex-grow: 1;
+           flex-shrink: 4;
+           align-self: center;
+           font-size: 1.7em;
+           font-weight: 900;
+           text-align: center;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+       }
+       #first:hover{
+           color: white;
+       }
+       #second{
+           order: 3;
+           flex-grow: 1;
+           font-size: 1.7em;
+           font-weight: 900;
+           text-align: center;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+       }
+       #second:hover{
+           color: white;
+       }
+       #third{
+           font-size: 1.7em;
+           font-weight: 900;
+           text-align: center;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+       }
+       #third:hover{
+           color: white;
+       }
+       #fourth{
+           font-size: 1.7em;
+           font-weight: 900;
+           text-align: center;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+       }
+       #fourth:hover{
+           color: white;
+       } */
+        /* Grid Box */
+        /* #grid{
+           width: 600px;
+           height: 300px;
+           border: 2px solid purple;
+           background-color: aqua;
+           margin: 200px auto;
+           display: grid;
+           grid-template-columns: repeat(2, 1fr);
+           grid-template-rows: repeat(2, 1f);
+           grid-auto-rows: 200px;
+           grid-column-gap: 20px;
+           grid-row-gap: 29px;
+           align-items: center;
+           justify-items: center;
+           place-items: center center;
+           align-content: space-between;
+           justify-content:center;
+           place-content: center;
+           grid-template-areas: 
+           "f f f"
+           "s t fo";
+
+
+
+       }
+       .all{
+           width: 90px;
+           height: 50px;
+           border: 1px solid black;
+           border-radius: 10px;
+           background-color: rgb(40, 209, 40);
+       }
+       #first{
+           grid-column-start: 1;
+           grid-column-end: 4;
+           grid-row-start: 1;
+           grid-row-end: 4;
+           align-self: center;
+           justify-self: center;
+           font-size: 1.7em;
+           font-weight: 900;
+           text-align: center;
+           grid-area: f;
+           
+       }
+       #first:hover{
+           color: white;
+       }
+       #second{
+           
+           font-size: 1.7em;
+           font-weight: 900;
+           text-align: center;
+           grid-area: s;
+           
+       }
+       #second:hover{
+           color: white;
+       }
+       #third{
+           font-size: 1.7em;
+           font-weight: 900;
+           text-align: center;
+           grid-area: t;
+           
+       }
+       #third:hover{
+           color: white;
+       }
+       #fourth{
+           font-size: 1.7em;
+           font-weight: 900;
+           text-align: center;
+           grid-area: fo;
+           
+       }
+       #fourth:hover{
+           color: white;
+       } */
+        /* gradient */
+        /* #gradient{
+            width: 300px;
+            height: 300px;
+            margin: 100px auto;
+            border: 2px solid orangered;
+            border-radius: 50%;
+            background-image: linear-gradient(red , green );
+            background-image: repeating-linear-gradient(to left,red 10%, green 20%);
+            background-image: radial-gradient(red, blue);
+            background-image: repeating-radial-gradient(closest-corner at 100px 200px, red 90%, blue);
+            background-image: repeating-linear-gradient( red 90% , blue  );
+            background-image: repeating-radial-gradient(closest-corner at 100px 200px ,red 90% , yellow);        
+        } */
+        /* Transform */
+        /* #transform{
+            height: 200px;
+            width: 200px;
+            margin: 200px auto;
+            border: 2px solid red;
+            background-color: #2fee28;
+            transform: scale(2);
+            transform: rotate(30deg);
+            transform: skew(20deg);
+            transform: translate(50px, 50px);
+        }
+        #transform:hover{
+            transition: all 1s linear;
+            transform: skew(20deg);
+
+            transform: rotate(360deg);
+            background-color: red;
+        } */
+        /* Transition */
+        /* #transition{
+            width: 200px;
+            height: 200px;
+            margin: 200px auto;
+            background-color: #2f1d33;
+            border: 2px solid #5f23f2;
+            transition-property: width;
+            transition-delay: 5ms;
+            transition-duration: 2s;
+            transition-timing-function: ease-in;
+        }
+        #transition:hover{
+            width: 300px;
+            transform: rotate(200deg);
+        } */
+        /* Animation */
+        /* #animation{
+            width: 300px;
+            height: 300px;
+            margin: 100px auto;
+            border: 2px solid orangered;
+            background-color: yellow;
+            
+            animation-name: suraj;
+            animation-duration: 2s;
+            animation-timing-function: ease;
+            animation-delay: 2ms;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-fill-mode: both;
+            animation-play-state: running;
+        }
+        @keyframes suraj {
+            
+            0%{  background-color: blue;}
+            25%{ transform: translatex(200px); background-color: yellow;}
+            50%{  transform: translate(200px,200px) scale(2);background-color: green;}
+            75%{  transform: translate(0px, 200px) rotate(45deg);  background-color: pink;}
+            100%{  transform: translate(0px, 0px); background-color: pink;}
+
+        } */
+        /* media queries */
+        /* #media{
+            width: 200px;
+            height: 200px;
+            margin: 200px auto;
+            border: 2px solid orangered;
+            background-color: aqua;
+        }
+        @media screen and (min-width: 400px) {
+            #media{
+            background-color: red;
+            }
+        }
+        @media screen and (min-width: 450px) {
+            #media{
+            background-color: orangered;
+            }
+        } */
+        /* background clip*/
+        /* #bgc{
+            width: 300px;
+            height: 300px;
+            margin: 100px auto;
+            font-size: 4em;
+            font-weight: 900;
+           
+            background-image: url("photo.jpg");
+            background-size: cover;
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+        #bgc{
+            width: 300px;
+            height: 300px;
+            margin: 100px auto;
+            font-size: 4em;
+            font-weight: 900;
+            background-image: linear-gradient(red, yellow);
+            background-size: cover;
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        } */
+        /* CSS VARIABLES */
+        /* :root{
+            --suraj: green;
+        }
+        #variables{
+            width: 300px;
+            height: 300px;
+            margin: 100px auto;
+            border: 2px solid orangered;
+            background-color: var(--suraj);
+        } */
+       /* CSS LINK RELATED PSEUDO CLASSES */
+       /* a:link{
+           width: 100px;
+           color: red; // it will change link default color blue to red
+       }
+       a:active{
+           color: red;
+           background-color: #ff2bff; // after clicking on the link it will change the color
+       }
+       a:visited{
+           color: red;
+           background-color: yellow; // if link is already visited then it will change the color
+       }
+       a:target{
+           color: pink;
+       } */
+       /* CSS BEFORE AND AFTER PSUEDO ELEMENTS */
+       /* p{
+           display: inline;
+           background-color: red;
+       }
+       p::before{
+           content: 'Ambekar ';
+           font-size: 3rem;
+       }
+       p::after{
+           content: 'Ambekar ';
+           font-size: 3rem;
+       }
+
+       li{
+           list-style: none;
+       }
+       li::before{
+           content: ' ';
+           display: inline-block;
+           width: 10px;
+           height: 10px;
+           background-image: url(/box.jpg) ;
+           background-size: contain;
+       } */
+       /* PROGRESS BAR */
+       
+
+
+
+
+    </style>
+</head>
+<body>
+    
+    <!-- Inline and Block tag examples -->
+    <!-- <div>
+    <h1>Suraj Ambekar</h1>
+    <h2>Suraj Ambekar</h2>
+
+    <img src="logo.JPG" alt="">
+    <img src="logo.JPG" alt="">
+    </div> -->
+    <!-- Table tag -->
+    <!-- <table cellpadding="10" cellspacing="10" border="1" >
+        <tr >
+            <th rowspan="2">first</th>
+            <th>second</th>
+            <th>third</th>
+        </tr>
+        <tr>
+            <td>dkjf</td>
+            <td >djflf</td>
+            <td>jflow</td>
+        </tr>
+        <tr>
+            <td>dkjf</td>
+            <td>djflf</td>
+            <td>jflow</td>
+        </tr>
+        <tr>
+            <td>dkjf</td>
+            <td>djflf</td>
+            <td colspan="3">jflow</td>
+        </tr>
+    </table> -->
+    <!-- Links Tag -->
+    <!-- <a href="www.google.com" target="_blank"> hello google</a><br>
+    <a href="#link">go to the paragraph</a>
+    <p id="link">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam, obcaecati. Optio, at! Aliquid id tempore nisi aliquam! Incidunt consectetur, officiis libero inventore, veniam impedit labore, dignissimos eligendi aspernatur nesciunt debitis sequi praesentium nemo!
+    </p> -->
+    <!-- Inline Frame tag -->
+    <!-- <iframe src="gradients.html" frameborder="2" height="200px" width="200px">
+    </iframe> -->
+    <!-- Media Tag (Audio and Video) -->
+    <!-- <audio src="001  VITTHAL NAMACHI SHALA BHARLI.mp3" controls></audio>
+    <video src="video.gif" controls autoplay></video> -->
+    <!-- Text Styling -->
+    <!-- <div id="style">
+        Suraj Bhagwan Ambekar
+    </div> -->
+    <!-- Units -->
+    <!-- <div id="units">
+
+    </div> -->
+    <!-- CSS Background -->
+    <!-- <div id="bg">
+
+    </div> -->
+    <!-- CSS MARGIN AND PADDING -->
+    <!-- <div id="mp">
+        suraj ambekar
+    </div> -->
+    <!-- DISPLAY PROPERTIES -->
+    <!-- <div id="dis">
+        <h1>suraj</h1>
+        <h2>bhagwan</h2>
+        <h3>ambekar</h3>
+    </div> -->
+    <!-- Position properties -->
+    <!-- <div id="container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta quibusdam voluptatem qui a quaerat asperiores nobis quos excepturi voluptate? Quas ratione iusto facilis assumenda, nam distinctio aut doloribus cumque expedita?</p>
+    </div> -->
+    <!-- Box Model -->
+    <!-- <div>
+
+    </div> -->
+    <!-- min max -->
+    <!-- <div>
+
+    </div> -->
+    <!-- overflow -->
+    <!-- <div id="of">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ut animi tenetur quisquam commodi est adipisci explicabo, reiciendis harum maiores.
+    </div> -->
+    <!-- text and box shadows -->
+    <!-- <div id="shadow">
+        suraj ambekar
+    </div> -->
+    <!-- Flex Box -->
+    <!-- <div id="flex">
+        <div id="first" class="all">1</div>
+        <div id="second" class="all">2</div>
+        <div id="third" class="all">3</div>
+        <div id="fourth" class="all">4</div>
+    </div> -->
+    <!-- Grid Box -->
+    <!-- <div id="grid">
+        <div id="first" class="all">1</div>
+        <div id="second" class="all">2</div>
+        <div id="third" class="all">3</div>
+        <div id="fourth" class="all">4</div>
+    </div> -->
+    <!-- gradient -->
+    <!-- <div id="gradient">
+
+    </div> -->
+    <!-- Transform -->
+    <!-- <div id="transform">
+
+    </div> -->
+    <!-- Transition -->
+    <!-- <div id="transition">
+
+    </div> -->
+    <!-- Animation -->
+    <!-- <div id="animation">
+
+    </div> -->
+    <!-- media queries -->
+    <!-- <div id="media">
+
+    </div> -->
+    <!-- background clip -->
+    <!-- <div id="bgc">
+        suraj ambekar
+    </div> -->
+    <!-- CSS VARIABLES -->
+    <!-- <div id="variables">
+
+    </div> -->
+    <!-- CSS LINK RELATED PSEUDO CLASSES -->
+    <!-- <a href="google.com">
+        google.com
+    </a> -->
+    <!-- CSS BEFORE AND AFTER PSUEDO ELEMENTS -->
+    <!-- <p>
+        suraj
+        <ul>
+            <li>suraj</li>
+            <li>suraj</li>
+            <li>suraj</li>
+            <li>suraj</li>
+        </ul>
+    </p> -->
+    <!-- <progress></progress> -->
+
+
+
+
+</body>
+</html>
