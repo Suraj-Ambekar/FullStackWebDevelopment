@@ -12,10 +12,10 @@
 
 // tasks
 
-/*alert("Js is cool");
+alert("Js is cool");
 
 console.log(prompt("what country are you from?", "name:"));
 
 console.log(confirm("continue learning"));
 
-console.log("I am learnign js");*/
+console.log("I am learnign js");

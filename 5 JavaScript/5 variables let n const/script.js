@@ -10,7 +10,7 @@
 
 
 // tasks
-/*let favFood ="Pizza", favColor= "Red", favDrink= "lemonade";
+let favFood ="Pizza", favColor= "Red", favDrink= "lemonade";
 
 console.log(favDrink);
 
@@ -18,7 +18,7 @@ favFood = "Pasta";
 
 const birthDay = "12th March 2000";
 
-console.log(birthDay);*/
+console.log(birthDay);
 
 
 
