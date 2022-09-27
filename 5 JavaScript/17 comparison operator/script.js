@@ -34,3 +34,20 @@ let b = "Surya";
 
 console.log( a<b);
 console.log(a>b);
+
+
+//tasks
+
+let c= 10;
+let d = 15;
+
+console.log(c<d);
+
+console.log(a == "10");
+
+console.log(a === "10");
+
+let e = "45";
+let f = 8;
+
+console.log(x !==y);
