@@ -18,3 +18,17 @@ let body = document.querySelector('body');
 let choice = 'white';
 
 // choice === 'white' ? body.classList.add('whites') : null; //not working
+
+
+//tasks 
+
+let msg = '';
+
+(1>10) ? msg = 'true' : msg = 'false';
+
+console.log(msg);
+
+let time = '12:00';
+
+let hi = time === '12:00' ? "good morning" : "good evening";
+console.log(hi); 
