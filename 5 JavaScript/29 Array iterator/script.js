@@ -41,3 +41,57 @@ let newNum = num.filter(
 );
 
 console.log(newNum);
+
+
+// reduce()
+
+let naturalNum = [1,2,3,4,5,6,7,8,9,1];
+ 
+function add(total, value, index, array){  //total here is used to store the iterated values
+    return total + value;
+}
+
+let nNum = naturalNum.reduce(add);
+console.log(nNum);
+
+// some()
+
+let numbs = naturalNum.some(
+    function (value){
+        return value >10;
+    }
+)
+console.log(numbs);
+
+//every()
+
+let numbss = naturalNum.every(
+    function(value){
+        return value < 10;
+    }
+);
+console.log(numbss);
+
+//find()
+
+let arr = ['sria','sjf','sdkf','kjdfd'];
+
+let newArr = arr.find(
+    function (value){
+        return value === 'sria';
+
+    }
+)
+console.log(newArr);
+
+
+//findIndex()
+
+let newArrr = naturalNum.findIndex(
+    function (value){
+        return value === 'sria';
+
+    }
+)
+console.log(newArrr);
+
