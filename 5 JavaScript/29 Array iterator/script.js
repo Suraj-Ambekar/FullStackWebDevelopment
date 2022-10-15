@@ -95,3 +95,28 @@ let newArrr = naturalNum.findIndex(
 )
 console.log(newArrr);
 
+//tasks
+
+const fruits = ['apple', 'orange', 'banana'];
+
+fruits.forEach(
+    function (value, index, array){
+        console.log(`${index} - ${value}`);
+    }
+); //it will execute automatically we don't have to use console.log()
+
+
+function upCase(x){
+    return x.toUpperCase();
+}
+
+let a = fruits.map(upCase);
+console.log(a);
+
+let checkLetters = fruits.every(
+    function (x){
+        return x.length > 3;
+    }
+);
+
+console.log(checkLetters);
