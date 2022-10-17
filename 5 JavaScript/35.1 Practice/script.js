@@ -34,28 +34,69 @@ comment*/
 //Data types
 //There are two types of DT - primitive and non-primitive
 //--Primitive--
-let a = 7; //number
-let b = 0.8; //number
-let c = 'string';
-let d = "string";
-console.log(1<100); // Boolean true of false
-let e = 9999999999999999999n; //BigInt
-let f; //undefined
+// let a = 7; //number
+// let b = 0.8; //number
+// let c = 'string';
+// let d = "string";
+// console.log(1<100); // Boolean true of false
+// let e = 9999999999999999999n; //BigInt
+// let f; //undefined
 //NUll
 
 //--Non-primitives--
-let arr = ['Suraj','Bhagwan','Ambekar']; //array
+// let arr = ['Suraj','Bhagwan','Ambekar']; //array
 
-function func(){
-    console.log("it's a function");
-}
-func();
+// function func(){
+//     console.log("it's a function");
+// }
+// func();
 
-let obj = {   //It's an object
-    name: 'suraj',
-    year: 2000,
-    age: 22,
-}
+// let obj = {   //It's an object
+//     name: 'suraj',
+//     year: 2000,
+//     age: 22,
+// }
+
+//Operators
+
+//Arithmetic Operators
+console.log(5+2); //addition
+console.log(5-2); //subtraction
+console.log(5/2); //division
+console.log(5*2); //Multiplication
+console.log(5%2); //modulus
+console.log(5**2); //exponentiation
+let incr = 1;
+incr++; //increment
+console.log(incr);
+let decr = 2;
+decr--; //decrement
+console.log(decr);
+
+//Assignment Operators
+let h = '= to assigne value';
+let i = 5;
+i += 1; //instead of writing this i= i+1 we can use this +=
+console.log(i);
+i -= 1; // same as above but it decreas value by 1
+console.log(i);
+i *= 2; // same as about it multiplies by 2
+console.log(i);
+i /= 2; // same as about it divide by 2
+console.log(i);
+i %= 2; // same as about it modulus by 2
+console.log(i);
+
+
+
+
+
+
+
+
+
+
+
 
 
 
