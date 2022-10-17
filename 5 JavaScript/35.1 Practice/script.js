@@ -60,32 +60,53 @@ comment*/
 //Operators
 
 //Arithmetic Operators
-console.log(5+2); //addition
-console.log(5-2); //subtraction
-console.log(5/2); //division
-console.log(5*2); //Multiplication
-console.log(5%2); //modulus
-console.log(5**2); //exponentiation
-let incr = 1;
-incr++; //increment
-console.log(incr);
-let decr = 2;
-decr--; //decrement
-console.log(decr);
+// console.log(5+2); //addition
+// console.log(5-2); //subtraction
+// console.log(5/2); //division
+// console.log(5*2); //Multiplication
+// console.log(5%2); //modulus
+// console.log(5**2); //exponentiation
+// let incr = 1;
+// incr++; //increment
+// console.log(incr);
+// let decr = 2;
+// decr--; //decrement
+// console.log(decr);
 
 //Assignment Operators
-let h = '= to assigne value';
-let i = 5;
-i += 1; //instead of writing this i= i+1 we can use this +=
-console.log(i);
-i -= 1; // same as above but it decreas value by 1
-console.log(i);
-i *= 2; // same as about it multiplies by 2
-console.log(i);
-i /= 2; // same as about it divide by 2
-console.log(i);
-i %= 2; // same as about it modulus by 2
-console.log(i);
+// let h = '= to assigne value';
+// let i = 5;
+// i += 1; //instead of writing this i= i+1 we can use this +=
+// console.log(i);
+// i -= 1; // same as above but it decreas value by 1
+// console.log(i);
+// i *= 2; // same as about it multiplies by 2
+// console.log(i);
+// i /= 2; // same as about it divide by 2
+// console.log(i);
+// i %= 2; // same as about it modulus by 2
+// console.log(i);
+
+//Numbers
+let j = 1e6; // 1and 6 zeros 1000000
+console.log(j);
+j= 1e-6; // 0.000001
+console.log(j);
+
+j = new Number(180); // We can create it as a number method
+
+//Number methods
+j = 83.980493803;
+j = j.toFixed(3);  //How many decimal number we want after a '.'
+console.log(j);
+
+j = 83.980493803;
+j = j.toPrecision(3);
+console.log(j);  //it gives you number from starting regardless of point .
+
+j = 83.980493803;
+j = j.toExponential();
+console.log(j);  //It gives you scientif exponential number
 
 
 
