@@ -157,42 +157,83 @@ comment*/
 
 //Date object
 //To use this we have to create date object
-let date = new Date(); //created date object
-console.log(date); //current date
-date = new Date(111111); //in milliseconds starts from 1 jan 1970
-console.log(date);
-date = new Date('Aug 29 2022 08:22:00');
-console.log(date); //date string
-date = new Date(1999,11,25,14,00,0,0);
-console.log(date); //component date
+// let date = new Date(); //created date object
+// console.log(date); //current date
+// date = new Date(111111); //in milliseconds starts from 1 jan 1970
+// console.log(date);
+// date = new Date('Aug 29 2022 08:22:00');
+// console.log(date); //date string
+// date = new Date(1999,11,25,14,00,0,0);
+// console.log(date); //component date
 
 //Date method
 //get method to get date
-date = new Date();
-console.log(date.getFullYear());
-console.log(date.getMonth());
-console.log(date.getDay());
-console.log(date.getDate());
+// date = new Date();
+// console.log(date.getFullYear());
+// console.log(date.getMonth());
+// console.log(date.getDay());
+// console.log(date.getDate());
 
 //Set method to set date and it has same get method only different is use set instead of get
-date.setFullYear(2000);
-console.log(date);
+// date.setFullYear(2000);
+// console.log(date);
 //same for all the methods
 
 //If you want a universal time 
-console.log(date.getUTCDate()); //it is universal
+// console.log(date.getUTCDate()); //it is universal
 
 
 //Math object
-let max = Math.max(2,35,64,46);
-console.log(max);
+// let max = Math.max(2,35,64,46);
+// console.log(max);
 
-let min = Math.min(2,343,234,3,1);
-console.log(min);
-console.log(Math.pow(5,2)); // 5 raise to 2
-console.log(Math.random().toFixed(1)*10);
-console.log(Math.floor(5.1));
-console.log(Math.round(5.8));
+// let min = Math.min(2,343,234,3,1);
+// console.log(min);
+// console.log(Math.pow(5,2)); // 5 raise to 2
+// console.log(Math.random().toFixed(1)*10);
+// console.log(Math.floor(5.9));
+// console.log(Math.round(5.5));
+
+//Operators
+//Comparison operator
+//Thres types of comparison operator
+//relational
+
+let num1 = 9;
+let num2 = 10;
+let num3 = '9';
+console.log(num1<num2);
+console.log(num1>num2);
+console.log(num1<=num2);
+console.log(num1>=num2);
+
+//Abstract or loose 
+console.log(num1==num2); //false
+console.log(num1==num3); //true Why? because == operator does'nt check type that's why
+console.log(num1!=num2);
+
+//strict 
+console.log(num1===num3); //strict check is it same and is it type same?
+console.log(num1!==num2);
+
+//Logical operators divided in 4 parts
+let nul;
+let logical = 9;
+
+console.log(typeof logical);
+logical = !logical; //NOT
+console.log(typeof logical);
+
+//OR (one of the condition should be true)
+// logical || alert("hello"); //now logical is false that's why alert generated but if you comment !logical then logical will become true then alert will not pop up
+
+//AND  (both should be true)
+logical && prompt('Hey','hii');
+
+//NULLISH
+console.log(nul ?? logical); // it will give false so to get expected op just comment above !logical line
+
+
 
 
 
