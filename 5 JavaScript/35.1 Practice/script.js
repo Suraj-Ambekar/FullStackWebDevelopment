@@ -199,40 +199,90 @@ comment*/
 //Thres types of comparison operator
 //relational
 
-let num1 = 9;
-let num2 = 10;
-let num3 = '9';
-console.log(num1<num2);
-console.log(num1>num2);
-console.log(num1<=num2);
-console.log(num1>=num2);
+// let num1 = 9;
+// let num2 = 10;
+// let num3 = '9';
+// console.log(num1<num2);
+// console.log(num1>num2);
+// console.log(num1<=num2);
+// console.log(num1>=num2);
 
 //Abstract or loose 
-console.log(num1==num2); //false
-console.log(num1==num3); //true Why? because == operator does'nt check type that's why
-console.log(num1!=num2);
+// console.log(num1==num2); //false
+// console.log(num1==num3); //true Why? because == operator does'nt check type that's why
+// console.log(num1!=num2);
 
 //strict 
-console.log(num1===num3); //strict check is it same and is it type same?
-console.log(num1!==num2);
+// console.log(num1===num3); //strict check is it same and is it type same?
+// console.log(num1!==num2);
 
 //Logical operators divided in 4 parts
-let nul;
-let logical = 9;
+// let nul;
+// let logical = 9;
 
-console.log(typeof logical);
-logical = !logical; //NOT
-console.log(typeof logical);
+// console.log(typeof logical);
+// logical = !logical; //NOT
+// console.log(typeof logical);
 
 //OR (one of the condition should be true)
 // logical || alert("hello"); //now logical is false that's why alert generated but if you comment !logical then logical will become true then alert will not pop up
 
 //AND  (both should be true)
-logical && prompt('Hey','hii');
+// logical && prompt('Hey','hii');
 
 //NULLISH
-console.log(nul ?? logical); // it will give false so to get expected op just comment above !logical line
+// console.log(nul ?? logical); // it will give false so to get expected op just comment above !logical line
 
+
+//Control Flow
+//Is is divided into two parts 
+//Condional statement (it is divided into three parts)
+//IF (divided into 3 parts)
+let m = 8;
+let n = 9;
+
+//if
+if (m < n){
+    console.log("m is less than n");
+}
+
+//if else
+if (m > n){
+    console.log("m is greater");
+} else{
+    console.log('n is greater');
+}
+
+//else... if 
+if (m == n){
+    console.log('m and n are same');
+} else if(m > n){
+    console.log('m is greater');
+} else{
+    console.log('n is smaller')
+}
+
+//Switch
+switch (m){
+    case 1:
+        console.log('it is 1');
+        break;
+    case 7: 
+        console.log('it is 7');
+        break;
+    case '8': //this is not gonna be op because it also check type of object
+        console.log('it is "8" but false op');
+        break;
+    case 8: 
+        console.log('it is 8 and true');
+        break;
+    default:
+        console.log('nothing matched');
+        break;
+}
+
+//Ternary
+console.log((m>n) ? 'm is greater' : 'n is greater');
 
 
 
