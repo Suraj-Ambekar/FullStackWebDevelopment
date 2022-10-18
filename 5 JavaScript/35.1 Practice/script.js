@@ -393,6 +393,86 @@ console.log(arrMethod);
 console.log(arrMethod.reverse()); //reverse()
 console.log(arrMethod.sort()); //sort()
 
+//Array iterator methods
+//for each
+let forArray = ['Suraj',1,35,true];
+
+console.log('forEach()');
+forArray.forEach(
+    function(value, index, arr){
+        console.log(`The index of ${value} is ${index}`);
+        // console.log(index);
+        // console.log(arr);
+    }
+);
+
+//map()
+console.log('map()');
+let mapArr = ['Suraj','Kiran','Bhagwan','Mangal'];
+
+function upperCase(value){
+    return value.toUpperCase();
+}
+
+let o = mapArr.map(upperCase);
+console.log(o);
+
+//filter()
+console.log('filter()');
+let filterArr = [1, 34,252,524,234,5,2];
+
+let p = filterArr.filter(
+    function(value){
+        return value %2===0;
+    }
+);
+console.log(p);
+
+//reduce()
+console.log('reduce()');
+function sumArr(total, value, index, arr){
+    return total +value;
+}
+let q = filterArr.reduce(sumArr);
+console.log(q);
+
+//some()
+console.log('some()');
+let someArr = filterArr.some(
+    function(value){
+        return value> 10;
+    }
+);
+console.log(someArr);
+
+//every()
+console.log('every()');
+let everyArr = filterArr.every(
+    function(value){
+        return value >0;
+    }
+);
+console.log(everyArr);
+
+//find()
+console.log('find()');
+let findArr = filterArr.find(
+    function(value){
+        return value === 34;
+    }
+);
+console.log(findArr);
+
+//findIndex()
+console.log('findIndex()');
+let findIndArr = mapArr.findIndex(
+    function(value){
+        return value === 'Suraj';
+    }
+);
+console.log(findIndArr);
+
+
 
 
 
