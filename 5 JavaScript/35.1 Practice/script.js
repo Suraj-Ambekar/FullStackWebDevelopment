@@ -342,141 +342,209 @@ comment*/
 
 //Arrays
 
-let arrays = [1,'Suraj',true];
-console.log(arrays);
+// let arrays = [1,'Suraj',true];
+// console.log(arrays);
 
-//to find value using index
-console.log(arrays[2]);
+// //to find value using index
+// console.log(arrays[2]);
 
-//to add values
-arrays[3] = 'hii';
-console.log(arrays);
+// //to add values
+// arrays[3] = 'hii';
+// console.log(arrays);
 
-//To delete
-delete arrays[3];
-console.log(arrays); //When you delete an item from array still it show empty because
-//item is deleted but index not so position is empty
-//for this we have a array method that will see next
+// //To delete
+// delete arrays[3];
+// console.log(arrays); //When you delete an item from array still it show empty because
+// //item is deleted but index not so position is empty
+// //for this we have a array method that will see next
 
-//When you add array inside a array it becomes multidimentinal array
-arrays= [1,'Suraj',true, [1,'Suraj',true]];
-console.log(arrays);
+// //When you add array inside a array it becomes multidimentinal array
+// arrays= [1,'Suraj',true, [1,'Suraj',true]];
+// console.log(arrays);
 
-//To access value from muldimentional array
-console.log(arrays[3][1]);
+// //To access value from muldimentional array
+// console.log(arrays[3][1]);
 
-//array properties
-console.log('array property');
-console.log(`The length of an array is ${arrays.length}`);
+// //array properties
+// console.log('array property');
+// console.log(`The length of an array is ${arrays.length}`);
 
-//array methods
-console.log('array methods');
-let arrMethod = ['Suraj',1, 3, 'Ambekar'];
-let secArr = ['Kiran',1, 3, 'Ambekar'];
-console.log(arrMethod.indexOf('Ambekar')); //indexOf()
-console.log(arrMethod.includes(1)); //includes()
-console.log(arrMethod.pop()); //pop()
-console.log(arrMethod);
-console.log(arrMethod.shift()); //shift()
-console.log(arrMethod);
-console.log(arrMethod.push('Ambekar')); //push()
-console.log(arrMethod);
-console.log(arrMethod.unshift('Suraj')); //unshift()
-console.log(arrMethod);
-console.log(arrMethod.concat(secArr)); //concat()
-console.log(arrMethod.join('|')); //join()
-a = 'suraj, Ambekar';
-console.log(a.split(',')); //split()
-console.log(arrMethod.slice(1,2)); //slice()
-console.log(arrMethod.splice(0,1,'Mangal')); //splice()
-console.log(arrMethod);
-console.log(arrMethod.reverse()); //reverse()
-console.log(arrMethod.sort()); //sort()
+// //array methods
+// console.log('array methods');
+// let arrMethod = ['Suraj',1, 3, 'Ambekar'];
+// let secArr = ['Kiran',1, 3, 'Ambekar'];
+// console.log(arrMethod.indexOf('Ambekar')); //indexOf()
+// console.log(arrMethod.includes(1)); //includes()
+// console.log(arrMethod.pop()); //pop()
+// console.log(arrMethod);
+// console.log(arrMethod.shift()); //shift()
+// console.log(arrMethod);
+// console.log(arrMethod.push('Ambekar')); //push()
+// console.log(arrMethod);
+// console.log(arrMethod.unshift('Suraj')); //unshift()
+// console.log(arrMethod);
+// console.log(arrMethod.concat(secArr)); //concat()
+// console.log(arrMethod.join('|')); //join()
+// a = 'suraj, Ambekar';
+// console.log(a.split(',')); //split()
+// console.log(arrMethod.slice(1,2)); //slice()
+// console.log(arrMethod.splice(0,1,'Mangal')); //splice()
+// console.log(arrMethod);
+// console.log(arrMethod.reverse()); //reverse()
+// console.log(arrMethod.sort()); //sort()
 
-//Array iterator methods
-//for each
-let forArray = ['Suraj',1,35,true];
+// //Array iterator methods
+// //for each
+// let forArray = ['Suraj',1,35,true];
 
-console.log('forEach()');
-forArray.forEach(
-    function(value, index, arr){
-        console.log(`The index of ${value} is ${index}`);
-        // console.log(index);
-        // console.log(arr);
-    }
-);
+// console.log('forEach()');
+// forArray.forEach(
+//     function(value, index, arr){
+//         console.log(`The index of ${value} is ${index}`);
+//         // console.log(index);
+//         // console.log(arr);
+//     }
+// );
 
-//map()
-console.log('map()');
-let mapArr = ['Suraj','Kiran','Bhagwan','Mangal'];
+// //map()
+// console.log('map()');
+// let mapArr = ['Suraj','Kiran','Bhagwan','Mangal'];
 
-function upperCase(value){
-    return value.toUpperCase();
+// function upperCase(value){
+//     return value.toUpperCase();
+// }
+
+// let o = mapArr.map(upperCase);
+// console.log(o);
+
+// //filter()
+// console.log('filter()');
+// let filterArr = [1, 34,252,524,234,5,2];
+
+// let p = filterArr.filter(
+//     function(value){
+//         return value %2===0;
+//     }
+// );
+// console.log(p);
+
+// //reduce()
+// console.log('reduce()');
+// function sumArr(total, value, index, arr){
+//     return total +value;
+// }
+// let q = filterArr.reduce(sumArr);
+// console.log(q);
+
+// //some()
+// console.log('some()');
+// let someArr = filterArr.some(
+//     function(value){
+//         return value> 10;
+//     }
+// );
+// console.log(someArr);
+
+// //every()
+// console.log('every()');
+// let everyArr = filterArr.every(
+//     function(value){
+//         return value >0;
+//     }
+// );
+// console.log(everyArr);
+
+// //find()
+// console.log('find()');
+// let findArr = filterArr.find(
+//     function(value){
+//         return value === 34;
+//     }
+// );
+// console.log(findArr);
+
+// //findIndex()
+// console.log('findIndex()');
+// let findIndArr = mapArr.findIndex(
+//     function(value){
+//         return value === 'Suraj';
+//     }
+// );
+// console.log(findIndArr);
+
+//Set And Weak set
+console.log('Set and Weak Set');
+let sets = new Set();
+
+sets.add('Suraj');
+console.log(sets);
+sets.add('Bhagwan').add('Ambekar').add('jh');
+console.log(sets);
+
+//to delete
+sets.delete('jh');
+console.log(sets);
+
+//to check value is present or not
+console.log(sets.has('Suraj'));
+
+//to check the size
+console.log(sets.size);
+
+//to clear set entirely
+console.log(sets.clear);
+
+//to take array as a set
+let setArr = [134,34,22,23,1,1];
+
+sets = new Set(setArr);
+console.log(sets);
+
+//Weak Set
+let weakSet = new WeakSet();
+
+weakSet.add(setArr);
+console.log(weakSet);
+//all the methods are same as set method
+
+
+//Map and Weak maps
+console.log('Map and Weak map');
+
+let maps = new Map();
+
+maps.set('Name','Suraj');
+maps.set('age',22).set('BY',2000);
+console.log(maps);
+
+//to get a value
+console.log(maps.get('Name'));
+
+//to check
+console.log(maps.has('Name'));
+
+//to delete
+console.log(maps.delete('BY'));
+
+//to find a size
+console.log(maps.size);
+
+//iterator method of maps
+for( let key of maps.keys()){
+    console.log(key);
 }
 
-let o = mapArr.map(upperCase);
-console.log(o);
-
-//filter()
-console.log('filter()');
-let filterArr = [1, 34,252,524,234,5,2];
-
-let p = filterArr.filter(
-    function(value){
-        return value %2===0;
-    }
-);
-console.log(p);
-
-//reduce()
-console.log('reduce()');
-function sumArr(total, value, index, arr){
-    return total +value;
+for (let value of maps.values()){
+    console.log(value);
 }
-let q = filterArr.reduce(sumArr);
-console.log(q);
 
-//some()
-console.log('some()');
-let someArr = filterArr.some(
-    function(value){
-        return value> 10;
-    }
-);
-console.log(someArr);
+for(let entries of maps.entries()){
+    console.log(entries);
+}
 
-//every()
-console.log('every()');
-let everyArr = filterArr.every(
-    function(value){
-        return value >0;
-    }
-);
-console.log(everyArr);
-
-//find()
-console.log('find()');
-let findArr = filterArr.find(
-    function(value){
-        return value === 34;
-    }
-);
-console.log(findArr);
-
-//findIndex()
-console.log('findIndex()');
-let findIndArr = mapArr.findIndex(
-    function(value){
-        return value === 'Suraj';
-    }
-);
-console.log(findIndArr);
-
-
-
-
-
-
+//Weak map
+let weakMap = new WeakMap();
+console.log(weakMap);
 
 
 
