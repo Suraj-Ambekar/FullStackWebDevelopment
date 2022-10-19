@@ -473,82 +473,103 @@ comment*/
 // console.log(findIndArr);
 
 //Set And Weak set
-console.log('Set and Weak Set');
-let sets = new Set();
+// console.log('Set and Weak Set');
+// let sets = new Set();
 
-sets.add('Suraj');
-console.log(sets);
-sets.add('Bhagwan').add('Ambekar').add('jh');
-console.log(sets);
+// sets.add('Suraj');
+// console.log(sets);
+// sets.add('Bhagwan').add('Ambekar').add('jh');
+// console.log(sets);
 
-//to delete
-sets.delete('jh');
-console.log(sets);
+// //to delete
+// sets.delete('jh');
+// console.log(sets);
 
-//to check value is present or not
-console.log(sets.has('Suraj'));
+// //to check value is present or not
+// console.log(sets.has('Suraj'));
 
-//to check the size
-console.log(sets.size);
+// //to check the size
+// console.log(sets.size);
 
-//to clear set entirely
-console.log(sets.clear);
+// //to clear set entirely
+// console.log(sets.clear);
 
-//to take array as a set
-let setArr = [134,34,22,23,1,1];
+// //to take array as a set
+// let setArr = [134,34,22,23,1,1];
 
-sets = new Set(setArr);
-console.log(sets);
+// sets = new Set(setArr);
+// console.log(sets);
 
-//Weak Set
-let weakSet = new WeakSet();
+// //Weak Set
+// let weakSet = new WeakSet();
 
-weakSet.add(setArr);
-console.log(weakSet);
-//all the methods are same as set method
+// weakSet.add(setArr);
+// console.log(weakSet);
+// //all the methods are same as set method
 
 
-//Map and Weak maps
-console.log('Map and Weak map');
+// //Map and Weak maps
+// console.log('Map and Weak map');
 
-let maps = new Map();
+// let maps = new Map();
 
-maps.set('Name','Suraj');
-maps.set('age',22).set('BY',2000);
-console.log(maps);
+// maps.set('Name','Suraj');
+// maps.set('age',22).set('BY',2000);
+// console.log(maps);
 
-//to get a value
-console.log(maps.get('Name'));
+// //to get a value
+// console.log(maps.get('Name'));
 
-//to check
-console.log(maps.has('Name'));
+// //to check
+// console.log(maps.has('Name'));
 
-//to delete
-console.log(maps.delete('BY'));
+// //to delete
+// console.log(maps.delete('BY'));
 
-//to find a size
-console.log(maps.size);
+// //to find a size
+// console.log(maps.size);
 
-//iterator method of maps
-for( let key of maps.keys()){
-    console.log(key);
+// //iterator method of maps
+// for( let key of maps.keys()){
+//     console.log(key);
+// }
+
+// for (let value of maps.values()){
+//     console.log(value);
+// }
+
+// for(let entries of maps.entries()){
+//     console.log(entries);
+// }
+
+// //Weak map
+// let weakMap = new WeakMap();
+// console.log(weakMap);
+
+//Functions
+//function declaration
+function hello(){
+    console.log('hei');
 }
+hello();
 
-for (let value of maps.values()){
-    console.log(value);
+//function expression
+let r = function(){
+    console.log('function expression');
 }
+r();
 
-for(let entries of maps.entries()){
-    console.log(entries);
+//parameters and arguments
+function sum(num1,num2){ //these are parameters
+    console.log(num1+num2);
 }
+sum(1,2); //these are arguments
 
-//Weak map
-let weakMap = new WeakMap();
-console.log(weakMap);
-
-
-
-
+//return function
+function retur(){
+    return 'This is return funciton';
+}
+console.log(retur());
 
 
 
