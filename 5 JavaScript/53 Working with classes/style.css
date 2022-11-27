@@ -1,0 +1,14 @@
+/* body{
+    background-color: black;
+    text-align: center;
+    color: white;
+} */
+
+.menu-item{
+    background-color: black;
+    color: white;
+}
+.active{
+    background-color: white;
+    color: black;
+}
