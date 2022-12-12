@@ -33,3 +33,18 @@ chapters are follow as:
 	- to open snippet ctrl+alt+r
 	- We have learn how to add functional componets inside react
     - added three components such as header, content, and footer
+
+4- Add CSS 
+	- You can add style in three different wways
+		1. go to styled-components.com website and see the steps how you can add style
+		2. Inline css
+			ex. you have added <footer> then you can add inline css using js
+				<footer style= {{backgroundColor: "yellow"}}></footer> //you have to add two{} 
+		3. using function
+			ex. Create a function where you can write css and then add it inside style using inline css like
+				let color = ()=> { backgroundColor:"yellow";}
+				<footer style= {color}></footer>
+		4. External css
+			- Create .css file and add all the css styles.
+			- Import .css file inside a index.js file using followig code
+				import './index.css';
