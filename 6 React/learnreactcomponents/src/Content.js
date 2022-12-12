@@ -1,10 +1,14 @@
+// importing useState to use useState
+import { useState } from 'react';
+
 const Content = ()=>{
+    const [name, setName] = useState('Suraj');
     // newName function is created to generate random name.
     const newName = ()=>{
         let arr = ['Suraj', 'Kiran','Prajaktas'];
         let int = Math.floor(Math.random()*3);
-        return arr[int];
-      }
+        setName(arr[int]);
+    }
     
     function clickEvent(){
         alert('Hello');
@@ -17,11 +21,11 @@ const Content = ()=>{
     }
     return (
         <main>
-            <p>
+            <p >
                 {/* here we have showing the result of generated name */}
-                Hello {newName()}
+                Hello {name}
             </p>
-            <button onClick={clickEvent}>Click me</button>
+            <button onClick={newName}>Click me</button>
             <button onClick={() => clickEvent2('Hello')}>Click me</button>
             <button onClick={(e) => clickEvent3(e)}>Click me</button>
         </main>
