@@ -48,3 +48,11 @@ chapters are follow as:
 			- Create .css file and add all the css styles.
 			- Import .css file inside a index.js file using followig code
 				import './index.css';
+
+5- Click Events
+	- Click events are same as js event that how we define it.
+	- first define a function then use onclick inside html tag
+		function clicked(){
+			console.log('hello');
+		}
+		<button onclick="{clicked)}"></button>
