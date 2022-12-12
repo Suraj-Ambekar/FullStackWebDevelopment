@@ -28,3 +28,8 @@ chapters are follow as:
 
 	- How to add comment
 		{/* <p>{}</p> */}
+
+3- Functional components
+	- to open snippet ctrl+alt+r
+	- We have learn how to add functional componets inside react
+    - added three components such as header, content, and footer
