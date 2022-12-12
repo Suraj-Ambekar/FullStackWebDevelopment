@@ -1,5 +1,5 @@
 // import logo from './logo.svg';
-import './App.css';
+// import './App.css';
 
 // imported header, content, and footer 
 import Header from './Header';
