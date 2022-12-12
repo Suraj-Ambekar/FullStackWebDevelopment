@@ -16,4 +16,15 @@ chapters are follow as:
  		- npm start
 			to start the project
 		- To stop project "ctrl+c"
-        
+
+2- App and JSX
+	- In app.js you will HTML but that is not HTML code that is a JSX
+	- To write javascript in react JSX  we use <p>{}</p> thse brackets. 
+	- Inside {} these, if anything is written then it would be consider as javascript.
+	- We can not add objects like array in react because they are not valid as a react child
+		ex. {{a:1,b:2,}} //It will show an error
+	- Also it does not render boolean values
+		ex { 2===4} //output should false but it does not appear on screen
+
+	- How to add comment
+		{/* <p>{}</p> */}
