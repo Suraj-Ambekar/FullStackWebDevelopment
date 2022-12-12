@@ -56,3 +56,12 @@ chapters are follow as:
 			console.log('hello');
 		}
 		<button onclick="{clicked)}"></button>
+
+6- useState Hook
+	- The useState Hook can be used to keep track of strings, numbers, booleans, arrays, objects, and any combination of these! 
+	- We could create multiple state Hooks to track individual values.
+	- To use useState hook, first we have to import it from react 
+		ex. import { useState } from 'react';
+	- After importing, create a useState like below and give defalut value
+		ex const[name, setName] = useState('Suraj"); 
+	- And then name and setName as per your use
