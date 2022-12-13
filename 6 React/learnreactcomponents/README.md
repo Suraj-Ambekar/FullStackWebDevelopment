@@ -65,3 +65,7 @@ chapters are follow as:
 	- After importing, create a useState like below and give defalut value
 		ex const[name, setName] = useState('Suraj"); 
 	- And then name and setName as per your use
+
+7- list and arrays
+	- We have created a list and add delete function to delete lists
+
