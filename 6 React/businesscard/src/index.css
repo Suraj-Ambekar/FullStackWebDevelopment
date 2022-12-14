@@ -19,7 +19,7 @@ img{
 .main{
   width: 317px;
   height: 399px;
-  background-color: blue;
+  background-color: #1A1B21;
   box-sizing: border-box;
   margin-top: -4px;
   padding: 1.5rem;
@@ -28,7 +28,7 @@ img{
 .footer{
   width: 317px;
   height: 64px;
-  background-color: green;
+  background-color: #161619;
   border-radius: 0px 0px 10px 10px;
 }
 
@@ -62,10 +62,25 @@ img{
   border: none;
   border-radius: 6px;
   font-size: 1rem;
-  padding: 0.4em 2em;
+  padding: 0.4em 1em;
 }
 #email{
   margin-right: 2rem;
+  
+}
+
+#linkedin{
+  background-color: #5093E2;
+}
+
+button > i{
+  font-size: 1rem;
+  margin-right: 0.5rem;
+  color: #1E1F26;
+}
+
+button > #link{
+  color: white;
 }
 
 .about{
@@ -88,4 +103,18 @@ img{
 .about > p{
   font-size: 0.8rem;
   color: rgba(245, 245, 245, 0.892);
+}
+
+.footer{
+  box-sizing: border-box;
+  padding: 0px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+
+}
+i{
+  font-size: 2rem;
+  color: #918E9B;
 }

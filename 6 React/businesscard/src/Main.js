@@ -6,8 +6,8 @@ function Main(){
                 <span className="post">Frontend Developer</span>
                 <span className="website">surajambekar.showwcase.com/</span>
                 <div className="buttons">
-                    <button className="btn" id="email">Email</button>
-                    <button className="btn">LinkedIn</button>
+                    <button className="btn" id="email"><i class="fa-solid fa-envelope"></i>Email</button>
+                    <button className="btn" id="linkedin"><i id="link" class="fa-brands fa-linkedin"></i> LinkedIn</button>
                 </div>
             </div>
             <div className="about">
