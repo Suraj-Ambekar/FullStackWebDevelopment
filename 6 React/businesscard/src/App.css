@@ -36,3 +36,20 @@
     transform: rotate(360deg);
   }
 }
+
+.main-container{
+  width: 550px;
+  height: 868px;
+  background-color: #282c34;
+  margin: 200px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sub-container{
+  width: 317px;
+  height: 780px;
+  background-color: red;
+  border-radius: 10px;
+}
