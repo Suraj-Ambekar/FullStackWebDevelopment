@@ -20,7 +20,9 @@ img{
   width: 317px;
   height: 399px;
   background-color: blue;
+  box-sizing: border-box;
   margin-top: -4px;
+  padding: 1.5rem;
 }
 
 .footer{
@@ -28,4 +30,62 @@ img{
   height: 64px;
   background-color: green;
   border-radius: 0px 0px 10px 10px;
+}
+
+.overview{
+  line-height: 1.3rem;  
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+
+}
+.overview > .name{
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: white;
+
+}
+.overview > .post{
+  font-size: 0.8rem;
+  color: #F3BF99;
+}
+.overview > .website{
+  font-size: 0.5rem;
+  color: #F5F5F5;
+}
+
+.overview > .buttons{
+  margin-top: 0.6rem;
+}
+
+.overview > .buttons > .btn{
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  padding: 0.4em 2em;
+}
+#email{
+  margin-right: 2rem;
+}
+
+.about{
+  margin-top: 1.5rem;
+  width: 247px;
+  height: 201px;
+  box-sizing: border-box;
+  text-align: justify;
+}
+
+.about > h3,p{
+  margin: 0;
+}
+
+.about > h3{
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+.about > p{
+  font-size: 0.8rem;
+  color: rgba(245, 245, 245, 0.892);
 }

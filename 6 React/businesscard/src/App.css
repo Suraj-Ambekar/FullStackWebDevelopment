@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,7 +35,7 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
 
 .main-container{
   width: 550px;
@@ -50,6 +50,5 @@
 .sub-container{
   width: 317px;
   height: 780px;
-  background-color: red;
   border-radius: 10px;
 }
