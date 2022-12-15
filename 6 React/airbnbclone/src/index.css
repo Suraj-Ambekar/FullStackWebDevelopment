@@ -40,3 +40,60 @@ code {
 .para{
   font-size: 1.5rem;
 }
+
+/* .card{
+  display: flex;
+  flex-direction: column;
+} */
+
+/* .cards-list {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  overflow-x: auto;
+} */
+
+.card {
+  width: 30%;
+  font-size: 12px;
+  flex: 0 0 auto;         /* ADD */
+  display: flex;          /* ADD */
+  flex-direction: column; /* ADD */
+  padding: 1.5rem 2rem;
+  border: 2px solid blue;
+}
+
+.card-img {
+  width: 100%;
+  border-radius: 9px;
+  margin-bottom: 9px;
+}
+
+.card > div{
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+
+}
+
+.star{
+  width: 13px;
+}
+
+.gray{
+  color: gray;
+}
+
+.desc{
+  font-size: 1rem;
+  color: #222222;
+}
+
+.price{
+  margin: 0;
+  font-size: larger;
+}
+
+.bold{
+  font-weight: bold;
+}
