@@ -5,9 +5,38 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: 'Poppins', sans-serif;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.navbar{
+  height: 4vh;
+  display: flex;
+  padding: 1.5rem 2rem;
+  background-color: white;
+  box-shadow: 0px 1px 4px #000000;
+}
+
+.hero{
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 2rem;
+}
+.photogrid{
+  max-width: 80%;
+  align-self: center;
+}
+
+.heading{
+  margin: 4rem 0 0 0 ;
+  font-size: 2rem;
+}
+
+.para{
+  font-size: 1.5rem;
 }
