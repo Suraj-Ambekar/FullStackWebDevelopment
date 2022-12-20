@@ -76,7 +76,7 @@ input{
 
 
 /* ================================== */
-* {
+/* * {
   box-sizing: border-box;
 }
 
@@ -127,4 +127,4 @@ main {
   font-size: 0.75rem;
   color: gray;
   margin-block: 7px;
-}
+} */
