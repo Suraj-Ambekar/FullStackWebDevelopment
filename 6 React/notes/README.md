@@ -1,0 +1,3 @@
+# Getting Started with Creating a new notes react app
+
+Some of the features are remaining...  
